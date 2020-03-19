@@ -1,0 +1,67 @@
+/* 
+header {
+    color: #000000;
+    text-align: center; 
+} */
+/* body{ display: grid; } */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background.jpeg");
+  }
+main{
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+h1 {color: #000000;
+    display: block;
+   text-align: center;
+   grid-column: 1/-1;
+ }
+img{
+    width: 125px; 
+    margin-bottom: 10px; 
+    display: block; 
+    justify-self: center; 
+    grid-column: 1/-1; 
+    /*Your code here*/
+ }
+ #mystuff{
+     display: grid; 
+     grid-template-columns: auto auto;
+    grid-column: 1/-1; 
+     text-align: center;
+ }
+ div{
+    padding: 25px; 
+    margin:5px; 
+    display: flex; 
+    justify-content: center;
+ /* YOUR CODE HERE */
+ }
+
+div:nth-child(1)  {border: 1px solid black; 
+}
+div:nth-child(3)  {border: 1px solid black; 
+}
+div:nth-child(5) {
+    border: 1px solid black; 
+} 
+div:nth-child(7) {
+    border: 1px solid black; 
+} 
+
+div:nth-child(9) {
+    border: 1px solid black; 
+} 
+ @media all and (min-width: 800px){
+  
+     #mystuff{
+        grid-template-columns: auto auto auto;
+    }
+    div{
+       padding: 25px; 
+       margin:5px; 
+    /* YOUR CODE HERE */
+    }
+    }
